@@ -1,0 +1,320 @@
+html{
+	font-size: 10px;
+}
+
+.gallery{
+	margin: 10px 50px;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+
+}
+
+.galrow{
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery  .galimg{
+	transition: 1s;
+	padding: 15px;
+	width: 300px;
+	height: 200px;
+	cursor: pointer;
+}
+
+ .galimg img{
+ 	width: 100%;
+ 	height: 100%;
+ }
+
+ .galimg{}
+
+ .backblack{
+ 	content: " ";
+ 	width: 100%;
+ 	height: 100%;
+ 	background-color: black;
+ 	position: absolute;
+ 	left: 0;
+ 	top: 0;
+ 	right: 0;
+ 	bottom: 0;
+ 	z-index: -1;
+ 	opacity: 0.5;
+ }
+
+.gallery .galimg:hover{
+	filter: grayscale(100%);
+	transform: scale(1.1);
+}
+
+.galonclick{
+	/*display: none;*/
+   position: absolute;
+   top: 0%;
+   left: 0%;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+
+.galonclickshort{
+  width: 60%;
+}
+
+ .galimg{
+ 	width: 100%;
+ 	height: 100%;
+ }
+
+ 
+
+.modalContainer{
+ display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /*background-color: black;*/
+   overflow: hidden;
+   transition: 0.7s ease;
+}
+
+.slides{
+	 position: relative;
+  /*background-color: black;*/
+  margin: auto;
+  padding: 0;
+  width: 150rem;
+  height: 50rem;
+  transition: 0.7s ease;
+  /*max-width: 1200px;*/
+}
+
+.myslides{
+  position: absolute;
+   /*display: none;*/
+   visibility: hidden;
+   margin-left: 25rem;
+   opacity: 0;
+   /*transform: translateX(100rem);*/
+   z-index: 2;
+   transition: 0.7s ease;
+   background-color: black;
+   width: 100rem;
+   height: 55rem;
+   overflow: hidden;
+}
+
+.myslidesshow{
+  /*display: block;*/
+  visibility: visible;
+  opacity: 1;
+
+}
+
+
+
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+   z-index: 3;
+   opacity: 0.8;
+   transition: 0.3s ease;
+}
+
+.next:hover,.prev:hover{
+  opacity: 1;
+}
+
+.next {
+  right: 21.3%;
+  border-radius: 3px 0 0 3px;
+
+}
+
+.next:before,.prev:before{
+ content: " ";
+ width: 100%;
+ height: 100%;
+ background-color: black;
+ position: absolute;
+ top: 0;
+ right: 0;
+ left: 0;
+ bottom: 0;
+ z-index: -1;
+ opacity: 0;
+ transition: 0.2s ease;
+}
+
+.next:hover:before,.prev:hover:before{
+  opacity: 0.4;
+}
+
+.prev{
+  left: 20%;
+}
+
+/*button section*/
+.buttons{
+  position: absolute;
+  top: 48rem;
+  left: 60rem;
+z-index: 8;
+display: flex;
+justify-content: space-between;
+}
+ .buttons a{
+  color: black;
+  font-size: 2rem;
+  margin-left: 1rem; 
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.4s ease;
+ }
+
+ .buttons a:hover{
+  background-color: crimson;
+  color: white;
+  border-color: crimson;
+  box-shadow: 2px 5px 5px black,-2px 5px 5px black;
+ }
+
+ .buttons a {
+  padding: 1rem;
+  border: 2px solid white;
+  background-color: white;
+ }
+
+.buttons img{
+display: none;
+}
+
+
+/*details section*/
+
+.det{
+  cursor: pointer;
+}
+
+.det1{}
+.det2{}
+.det3{}
+.det4{}
+.det5{}
+.det6{}
+.det7{}
+.det8{}
+.det9{}
+
+.detail1{
+  transform: translateY(100rem);
+}
+.detail2{
+  transform: translateY(100rem);
+}
+.detail3{
+  transform: translateY(100rem);
+}
+.detail4{
+  transform: translateY(100rem);
+}
+.detail5{
+  transform: translateY(100rem);
+}
+.detail6{
+  transform: translateY(100rem);
+}
+.detail7{
+  transform: translateY(100rem);
+}
+.detail8{
+  transform: translateY(100rem);
+}
+.detail9{
+  transform: translateY(100rem);
+}
+
+.details{
+  padding: 2rem;
+  font-size: 3rem;
+  color: white;
+  width: 40%;
+  height: 51rem;
+  background-color: #222;
+  position: absolute;
+  right: 0;
+  z-index: 4;
+  transition: 0.5s ease;
+}
+
+.detailshow{
+  transform: translateY(0);
+}
+
+.closedetails{
+  opacity: 0;
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  top: 20%;
+  right: 25%;
+ z-index: 8;
+  cursor: pointer;
+  transform: translateY(-10rem);
+  transition: 0.3s ease-in;
+ 
+}
+
+.closeshow{
+  opacity: 1;
+   transition-delay: 0.4s;
+}
+
+.closedet{}
+
+
+
+
+
+

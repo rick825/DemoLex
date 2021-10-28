@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+</head>
+<body>
+	<!-- gallery section -->
+    <div class="gallery">
+     <div class="backblack"></div>
+    	<div class="galrow">
+    	<div class="gall1 gall">
+      <div class="galimg" data-lightbox="mygallery" ><img onclick="openModal();currentSlide(1)" src="images/1.jpg"></div>   
+    </div>
+    <div class="gall2 gall">
+		<div  class="galimg" data-lightbox="mygallery" ><img  onclick="openModal();currentSlide(2)" src="images/4.jpg"></div>
+     </div>
+     <div class="gall3 gall">
+		<div class="galimg" data-lightbox="mygallery" ><img onclick="openModal();currentSlide(3)" src="images/7.jpg"></div>
+	</div>
+	</div>
+
+	 <div class="galrow">
+	<div class="gall4 gall">
+		<div class="galimg" data-lightbox="mygallery"><img  onclick="openModal();currentSlide(4)"  src="images/3.jpg"></div>
+	</div>
+	<div class="gall5 gall">
+		<div  class="galimg" data-lightbox="mygallery" ><img onclick="openModal();currentSlide(5)" src="images/5.jpg"></div>
+	</div>
+	<div class="gall6 gall">
+		<div class="galimg" data-lightbox="mygallery" ><img onclick="openModal();currentSlide(6)" src="images/9.jpg"></div>
+	</div>
+</div>
+
+    <div class="galrow">
+	<div class="gall7 gall">
+		<div class="galimg" data-lightbox="mygallery" ><img onclick="openModal();currentSlide(7)" src="images/6.jpg"></div>
+	</div>
+	<div class="gall8 gall">
+		<div  class="galimg"  data-lightbox="mygallery" ><img onclick="openModal();currentSlide(8)" src="images/8.jpg"></div>
+	</div>
+	<div class="gall9 gall">
+		<div class="galimg" data-lightbox="mygallery"  ><img onclick="openModal();currentSlide(9)" src="images/2.jpg"></div>
+	</div>
+</div>
+
+    </div>
+    <!-- end gallary section -->
+
+    <!-- container  section-->
+    <div class="modalContainer" id="slidemodal">
+    	<a href="" class="close"><img src="images/close.png" alt=""></a>
+    	<div class="slides" id="slides" >
+               <div class="closedet closedetails"><p>Close</p></div>
+    		<div class="myslides myslides1">
+    			<div class="galonclick galons1"><img class="galimg" src="images/CH.jpg" alt=""></div>
+    			<div class="buttons">
+    			   <a href="images/CH.jpg" download="CH">Download
+    			   <img src="images/CH.jpg" alt=""></a>
+    			   <a  class="det det1">Details</a>
+    			</div>
+    			 <div class="details detail1">
+    			 	
+    			 	<p>Name:-detail1</p>
+    			 	<p>Details:-</p>
+    			 </div>
+    		</div>
+
+    		<div class="myslides myslides2">
+    			<div class="galonclick galons1"  ><img class="galimg" src="images/Coorg_karnataka.jpg" alt=""></div>
+    			<div class="buttons">
+    			   <a href="images/Coorg_karnataka.jpg" download="Coorg_karnataka">Download<img src="images/Coorg_karnataka.jpg" alt=""></a>
+    			   <a  class="det det2">Details</a>
+    			</div>
+    			<div class="details detail2">
+    				
+    			 	<p>Name:-detail2</p>
+    			 	<p>Details:-</p>
+    			 </div>
+    		</div>
+
+    		<div class="myslides myslides3">
+    			<div class="galonclick galons1"  ><img class="galimg" src="images/Ooty_and_Coonoor_Tamil Nadu.jpg" alt=""></div>
+    			<div class="buttons">
+    			   <a href="images/Ooty_and_Coonoor_Tamil Nadu.jpg" download="Ooty_and_Coonoor_Tamil Nadu">Download<img src="images/Ooty_and_Coonoor_Tamil Nadu.jpg" alt=""></a>
+    			   <a  class="det det3 ">Details</a>
+    			</div>
+    			<div class="details detail3">
+    				
+    			 	<p>Name:-detail3</p>
+    			 	<p>Details:-</p>
+    			 </div>
+    		</div>
+
+    		<div class="myslides myslides4">
+    			<div class="galonclick galons1"  ><img class="galimg" src="images/RDJ.jpg" alt=""></div>
+    			<div class="buttons">
+    			   <a href="images/RDJ.jpg" download="RDJ">Download<img src="images/RDJ.jpg" alt=""></a>
+    			   <a  class="det det4">Details</a>
+    			</div>
+    			<div class="details detail4">
+    				
+    			 	<p>Name:-detail4</p>
+    			 	<p>Details:-</p>
+    			 </div>
+    		</div>
+
+    		<div class="myslides myslides5">
+    			<div class="galonclick galons1"  ><img class="galimg" src="images/sylvester.jpg" alt=""></div>
+    			<div class="buttons">
+    			   <a href="images/sylvester.jpg" download="sylvester">Download<img src="images/sylvester.jpg" alt=""></a>
+    			   <a  class="det det5">Details</a>
+    			</div>
+    			<div class="details detail5">
+    				
+    			 	<p>Name:-detail5</p>
+    			 	<p>Details:-</p>
+    			 </div>
+    		</div>
+
+    		<div class="myslides myslides6">
+    			<div class="galonclick galons1"  ><img class="galimg" src="images/Van_Diesel.jpg" alt=""></div>
+    			<div class="buttons">
+    			   <a href="images/Van_Diesel.jpg" download="Van_Diesel">Download<img src="images/Van_Diesel.jpg" alt=""></a>
+    			   <a  class="det det6">Details</a>
+    			</div>
+    			<div class="details detail6">
+    				
+    			 	<p>Name:-detail6</p>
+    			 	<p>Details:-</p>
+    			 </div>
+    		</div>
+
+    		<div class="myslides myslides7">
+    			<div class="galonclick galons1"  ><img class="galimg" src="images/Tanjiro.jpg" alt=""></div>
+    			<div class="buttons">
+    			   <a href="images/Tanjiro.jpg" download="Tanjiro">Download<img src="images/Tanjiro.jpg" alt=""></a>
+    			   <a  class="det det7">Details</a>
+    			</div>
+    			<div class="details detail7">
+    				
+    			 	<p>Name:-detail7</p>
+    			 	<p>Details:-</p>
+    			 </div>
+    		</div>
+
+    		<div class="myslides myslides8">
+    			<div class="galonclick galons1"  ><img  class="galimg" src="images/Solo_Leveling.jpg" alt=""></div>
+    			<div class="buttons">
+    			   <a href="images/Solo_Leveling.jpg" download="Solo_Leveling">Download<img src="images/Solo_Leveling.jpg" alt=""></a>
+    			   <a class="det det8">Details</a>
+    			</div>
+    			<div class="details detail8">
+    				
+    			 	<p>Name:-detail8</p>
+    			 	<p>Details:-</p>
+    			 </div>
+    		</div>
+
+    		<div class="myslides myslides9">
+    			<div class="galonclick galons1" ><img  class="galimg" src="images/DN.jpg" alt=""></div>
+    			<div class="buttons">
+    			   <p><a href="images/DN.jpg" download>Download<img src="images/DN.jpg" alt=""></a></p>
+    			   <p><a  class="det det9">Details</a></p>
+    			</div>
+    			<div class="details detail9">
+    				
+    			 	<p>Name:-detail9</p>
+    			 	<p>Details:-</p>
+    			 </div>
+    		</div>
+
+    	</div>
+
+    	<!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)"><img src="images/prev.png" alt=""></a>
+    <a class="next" onclick="plusSlides(1)"><img src="images/next.png" alt=""></a>
+    </div>
+    <!-- end conatiner section -->
+
+
+<script src="js/app.js"></script>
+<script>
+
+	const details =()=>{
+		const x1 = document.querySelector('.detail1');
+        const x2 = document.querySelector('.detail2');
+        const x3 = document.querySelector('.detail3');
+        const x4 = document.querySelector('.detail4');
+        const x5 = document.querySelector('.detail5');
+        const x6 = document.querySelector('.detail6');
+        const x7 = document.querySelector('.detail7');
+        const x8 = document.querySelector('.detail8');
+        const x9 = document.querySelector('.detail9');
+		const y1 = document.querySelector('.det1');
+		const y2 = document.querySelector('.det2');
+		const y3 = document.querySelector('.det3');
+		const y4 = document.querySelector('.det4');
+		const y5 = document.querySelector('.det5');
+		const y6 = document.querySelector('.det6');
+		const y7 = document.querySelector('.det7');
+		const y8 = document.querySelector('.det8');
+		const y9 = document.querySelector('.det9');
+
+       const closed = document.querySelector('.closedet');
+       const galonclick = document.querySelectorAll(".galonclick");
+         var i;
+         closed.addEventListener('click',()=>{
+              x1.classList.remove('detailshow');
+              x2.classList.remove('detailshow');
+              x3.classList.remove('detailshow');
+              x4.classList.remove('detailshow');
+              x5.classList.remove('detailshow');
+              x6.classList.remove('detailshow');
+              x7.classList.remove('detailshow');
+              x8.classList.remove('detailshow');
+              x9.classList.remove('detailshow');
+              closed.classList.remove('closeshow');
+              for(i=0;i<galonclick.length;i++){
+              galonclick[i].classList.remove('galonclickshort');
+          }
+         });
+
+		y1.addEventListener('click',()=>{
+           x1.classList.add('detailshow');
+           galonclick[0].classList.add('galonclickshort');
+           closed.classList.add('closeshow');
+       });
+
+		y2.addEventListener('click',()=>{
+           x2.classList.add('detailshow');
+           galonclick[1].classList.add('galonclickshort');
+           closed.classList.add('closeshow');
+       });
+
+		y3.addEventListener('click',()=>{
+           x3.classList.add('detailshow');
+           galonclick[2].classList.add('galonclickshort');
+           closed.classList.add('closeshow');
+       });
+
+		// y1.addEventListener('click',()=>{
+  //          x1.classList.add('detailshow');
+  //          galonclick[3].classList.add('galonclickshort');
+  //          closed.classList.add('closeshow');
+  //      });
+
+		y4.addEventListener('click',()=>{
+           x4.classList.add('detailshow');
+           galonclick[3].classList.add('galonclickshort');
+           closed.classList.add('closeshow');
+       });
+
+		y5.addEventListener('click',()=>{
+           x5.classList.add('detailshow');
+           galonclick[4].classList.add('galonclickshort');
+           closed.classList.add('closeshow');
+       });
+
+		y6.addEventListener('click',()=>{
+           x6.classList.add('detailshow');
+           galonclick[5].classList.add('galonclickshort');
+       });
+
+		y7.addEventListener('click',()=>{
+           x7.classList.add('detailshow');
+           galonclick[6].classList.add('galonclickshort');
+           closed.classList.add('closeshow');
+       });
+
+		y8.addEventListener('click',()=>{
+           x8.classList.add('detailshow');
+           galonclick[7].classList.add('galonclickshort');
+           closed.classList.add('closeshow');
+       });
+
+		y9.addEventListener('click',()=>{
+           x9.classList.add('detailshow');
+           galonclick[8].classList.add('galonclickshort');
+           closed.classList.add('closeshow');
+       });
+	}
+
+	details();
+	
+</script>    
+</body>
+</html>
